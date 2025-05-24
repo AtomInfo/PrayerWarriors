@@ -61,6 +61,10 @@ export const menuItems: MenuItem[] = [
     url: "#gallery"
   },
   {
+    name: "Donate",
+    url: "#donate"
+  },
+  {
     name: "Contact",
     url: "#contact"
   }

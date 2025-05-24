@@ -31,13 +31,13 @@ export const insertUserSchema = createInsertSchema(users).pick({
   fullName: true,
 });
 
-export const insertDonationSchema = createInsertSchema(donations).pick({
-  userId: true,
-  amount: true,
-  currency: true,
-  donationType: true,
-  anonymous: true,
-  note: true,
+export const insertDonationSchema = createInsertSchema(donations, {
+  amount: z.string().min(1),
+  currency: z.string().default("USD"),
+  donationType: z.string().default("tithe"),
+  anonymous: z.boolean().default(false),
+  note: z.string().nullable().optional(),
+  userId: z.number().nullable().optional(),
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;

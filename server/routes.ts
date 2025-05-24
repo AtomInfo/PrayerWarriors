@@ -37,11 +37,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       //   donationData.userId = req.user.id;
       // }
       
-      // Validate donation data
-      const validatedData = insertDonationSchema.partial().parse(donationData);
-      
-      // Create donation record
-      const donation = await storage.createDonation(validatedData);
+      // Create donation record with the required fields
+      const donation = await storage.createDonation({
+        amount: amount.toString(),
+        currency,
+        donationType,
+        anonymous,
+        note: note || null
+      });
       
       res.json({ 
         clientSecret: paymentIntent.clientSecret,
