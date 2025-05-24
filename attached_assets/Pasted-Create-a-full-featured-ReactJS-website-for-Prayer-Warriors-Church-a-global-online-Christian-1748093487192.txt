@@ -1,0 +1,83 @@
+Create a full-featured **ReactJS** website for **Prayer Warriors Church**, a global online Christian fellowship based in **Ntinda, Kampala, Uganda**. Use **React functional components**, **CSS modules** or plain CSS, and ensure a clean, modular component structure. Use placeholder images (to be replaced later) and organize the site into clear, welcoming sections.
+
+---
+
+🏠 Homepage:
+- Main headline: “Prayer Warriors Church”
+- Subheadline: “United in Prayer Across the World”
+- Background image: Use a peaceful spiritual image (e.g., hands in prayer, sunrise with a cross)
+- Brief description:  
+  "As Prayer Warriors Church, we come together every evening to share the goodness of God. We are a diverse, international family in Christ, spreading love, peace, and hope through our online fellowship."
+
+---
+
+📖 About Section:
+- Describe the daily spiritual gatherings and the global nature of the community.
+- Highlight the Church's values: love, friendship, support, and encouragement.
+- Mention the scripture:  
+  _Matthew 6:33 — “But seek first His kingdom and His righteousness, and all these things will be added to you.”_
+
+---
+
+🙏 Live Services Section:
+- Title: “Join Our Daily Prayer Sessions”
+- Description: "We gather live every evening from 8:00 PM to 9:30 PM (EAT). All are welcome to experience God’s love."
+- Display a button linking to Google Meet:  
+  `https://meet.google.com/cxo-hsmk-zxe`
+
+---
+
+🌿 Mission & Motto Section:
+- Mission Points (use styled list or icons):
+  - Growing spiritually together in the Lord 🙏
+  - Learning the Word of God together
+  - Praying for one another 🫂👏
+- Motto: _Galatians 5:22_ (“But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness…”)
+
+---
+
+💬 Testimonials or Quotes Section (optional):
+- Include a few short quotes from community members or scripture for encouragement.
+
+---
+
+🖼️ Gallery Section:
+- Use 4–6 placeholder images showing fellowship, Bible study, or peaceful worship scenes in a responsive grid.
+
+---
+
+📞 Contact Section:
+- Display contact details clearly:
+  - 📞 Phone: +256 706 428 097
+  - 📧 Email: info.prayerwarriors@gmail.com
+  - 📍 Location: Ntinda, Kampala, Uganda
+- Simple contact form (Name, Email, Message) — no backend required
+- Optional: Embed a Google Map of the location
+
+---
+
+🔗 Footer:
+- Add social links (placeholder icons or real links if available)
+- Reiterate service times and Google Meet link
+
+---
+
+🎨 Design Guidelines:
+- Use peaceful and spiritual color tones (soft purples, whites, golds, blues)
+- Clean, mobile-responsive layout with friendly navigation
+- Typography: Use warm, legible fonts (like `Poppins` or `Nunito`)
+- Add subtle transitions and hover effects to create a welcoming feel
+
+---
+
+📁 Project Structure:
+- `src/components/` → Individual components (Navbar, Hero, About, Services, Mission, Gallery, Contact, Footer)
+- `src/App.js` → Main layout & routing
+- `src/index.js` → Entry point
+- `src/styles/` → CSS or CSS Modules (e.g., `About.module.css`)
+
+---
+
+📦 Notes:
+- Do **not** use Redux or unnecessary global state.
+- Use clean React code, well-commented and easy to extend (e.g., future blog, prayer requests page).
