@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    
+    --primary: 260 39% 63%; /* #8E7CC3 - soft purple */
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 260 54% 90%; /* #E0D7F6 - light purple */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    
+    --accent: 45 80% 52%; /* #D4AF37 - gold */
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --ring: 215 20.2% 65.1%;
+    
+    --radius: 0.5rem;
+
+    --dark: 210 35% 37%; /* #3D5A80 - dark blue */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-nunito text-foreground bg-background antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  .scripture {
+    @apply italic relative pl-6;
+  }
+
+  .scripture::before {
+    content: '"';
+    @apply absolute left-0 top-[-0.5rem] text-4xl text-primary;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-dark mb-4;
+  }
+
+  .section-divider {
+    @apply w-20 h-1 bg-accent mx-auto;
+  }
+}
+
+@layer utilities {
+  .transition-default {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.text-dark {
+  color: hsl(var(--dark));
+}
+
+.bg-dark {
+  background-color: hsl(var(--dark));
+}
